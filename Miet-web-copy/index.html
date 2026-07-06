@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MIET College - SmartCampusPortal</title>
+  </head>
+  <body>
+    <header id="top">
+      <img
+        src="https://image-static.collegedunia.com/public/college_data/images/logos/1705041201download14.png"
+        alt="logo"
+        width="70"
+      />
+      <h1>MIET College</h1>
+      <p>Smart Campus Helpdesk Portal</p>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#RC">Register Complaint</a></li>
+        <li><a href="#Res">Resources</a></li>
+        <li><a href="#FAQ">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <hr />
+    <main>
+      <section id="home">
+        <figure>
+          <img
+            src="https://mietjmu.in/wp-content/uploads/2025/02/DJI_20241129113027_0387_D-Large.jpeg"
+            alt="MIET Campus image"
+            width="100%"
+          />
+
+          <figcaption>MIET College - Main Campus</figcaption>
+        </figure>
+        <h2>Welcome to the Smart Campus Portal</h2>
+        <p>
+          Your one-stop portal for registering complaints, accessing resources,
+          and staying informed about campus life. We are here to help you with
+          every issue — big or small.
+        </p>
+      </section>
+      <hr />
+
+      <section id="about">
+        <h2>About the Helpdesk</h2>
+        <p>
+          The MIET Smart Campus Helpdesk is a digital platform that allows
+          students to report issues related to hostels, labs, classrooms,
+          library, transport, and more. Our team ensures timely resolution and
+          keeps you updated on the status of your requests.
+        </p>
+        <blockquote>
+            "Our mission is to provide a seamless experience for every student,
+          ensuring their concerns are heard and resolved promptly."
+        </blockquote>
+        <h3>How it Works</h3>
+        <ol>
+            <li>Fill the complaint form below with your details and issue</li>
+            <li>Our team reviews and assigns the complaint</li>
+            <li>Track progress through email notifications</li>
+            <li>Confirm resolution once satisfied</li>
+        </ol>
+
+      </section>
+      <hr>
+
+      <section id="RC">
+        <h2>Register a Complaint</h2>
+        <p> Fields marked with <strong>*</strong> are <strong>required</strong>. </p>
+        <form>
+            <fieldset>
+                <legend>
+                    <h3>Student Details</h3>
+                </legend>
+                <label for="name">Full Name*</label>
+                <input type="text" id="name" placeholder="Enter the Full name">
+
+                <label for="email">Email*</label>
+                <input type="email" id="email" placeholder="You@miet.edu">
+
+                <label for="rollnumber">RollNumber*</label>
+                <input type="text" id="rollnumber" placeholder="Enter your RollNumber">
+
+                <label for="phone">Phone*</label>
+                <input type="tel" id="phone" placeholder="900000000">
+
+                <label for="Year">Year/Branch*</label>
+                <select id="Year">
+                    <option value="">--Select--</option>
+                    <option value="cse-1st-year">CSE 1st Year</option>
+                    <option value="cse-2st-year">CSE 2st Year</option>
+                    <option value="cse-3st-year">CSE 3st Year</option>
+                    <option value="cse-4st-year">CSE 4st Year</option>
+                    <option value="ece-1st-year">ECE 1st Year</option>
+                    <option value="ece-2st-year">ECE 2st Year</option>
+                    <option value="ece-3st-year">ECE 3st Year</option>
+                    <option value="ece-4st-year">ECE 4st Year</option>
+                </select>
+
+
+            </fieldset>
+        </form>   
+        
+        <form>
+            <f>
+                <legend>
+                    <h3>Complaint Details</h3> </legend>
+                <label for="Category">Category*</label>
+                <select name="" id="Category">
+                    <option value="">--Select--</option>
+                    <option value="hostel-issue">Hostel Issue</option>
+                    <option value="lab-equipment">Lab/Equipment</option>
+                    <option value="cllassroom-issue">Classroom Issue</option>
+                    <option value="Library Issue">Library Issue</option>
+                    <option value="Transport Issue">Transport Issue</option>
+                    <option value="Canteen Issue">Canteen Issue</option>
+                    <option value="Other">Other</option>
+                </select>
+                
+                <label for="Complaint Title ">Complaint Title*</label>
+                <input type="text" id="Complaint Title " placeholder="Brief Title (min 10 characters)" minlength="10">
+
+                <label for="Dsec">Description*</label>
+                <textarea name="Description" id="Desc">Descripe your issue in details.....</textarea>
+                <br>
+                <p>Priority*</p>
+                <label>
+                  <input type="radio" value="Low" name="prior">
+                  Low
+                </label>
+                <label>
+                  <input type="radio" value="Medium" name="prior">
+                  Medium
+                </label>
+                <label>
+                  <input type="radio" value="High" name="prior">
+                  High
+                </label>
+                <label for="location">Location</label>
+                <input type="text" id="location" list="locations" placeholder="Start typing for suggestions">
+                <datalist id="locations">
+                  <option value="Main Block"></option>
+                  <option value="Hostel A"></option>
+                  <option value="Hostel B"></option>
+                  <option value="Lab Complex"></option>
+                  <option value="Library "></option>
+                  <option value="Canteen"></option>
+                </datalist>
+                
+            </fieldset>
+            <fieldset>
+              <legend>
+                <h3>Supporting Information (Optional)</h3>
+                <label for="date">Date of Issue*</label>
+                <input type="date" id="date">
+
+                <label for="images">Upload Images</label>
+                <input type="file" id="images" accept="images/*" multiple>
+
+                <label for="sat">Satisfaction before issue (1-10)</label>
+                <input type="range" id="sat" min="1" max="10" value="5">
+
+                <label for="color">Resolution Tag</label>
+                <input type="color" id="color" value="#ff0000">
+
+
+              </legend>
+            </fieldset>
+            <fieldset>
+              <legend>
+                <h3>Submit</h3>
+              </legend>
+              <p for="">
+                <p>
+                <input type="checkbox" value="accept" required>
+                I confirm the information provided is correct *
+              </p>
+              <input type="submit" value="submit Complaint">
+              <input type="reset" value="Clear form">
+
+              </label>
+            </fieldset>
+
+        </form>
+      </section>
+      <hr>
+
+      <section id="Res">
+        <fieldset>
+          <legend><h3>Resources & Downloads</h3></legend>
+          <table>
+            <caption>
+               Course Materials and Helpdesk Resources 
+            </caption>
+            <thead>
+              <tr>
+                <th>Resources Name</th>
+                <th>Type</th>
+                <th>Size</th>
+                <th>Download</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Helpdesk User Guide</td>
+                <td>PDF</td>
+                <td>1.2 MB</td>
+                <td><a href="#" download >Download</a></td>
+              </tr>
+              <tr>
+                <td>Complaint SOP Document </td>
+                <td>PDF</td>
+                <td>800 Kb</td>
+                <td><a href="#" download>Download</a></td>
+              </tr>
+
+              <tr>
+                <td>Hostel Rules & Regulations</td>
+                <td>PDF</td>
+                <td>2.1 MB</td>
+                <td><a href="#" download>Download</a></td>
+
+              </tr>
+
+              <tr>
+                <td>Lab Equipment Request Form</td>
+                <td>PDf</td>
+                <td>450 KB</td>
+                <td><a href="#" download>Download</a></td>
+              </tr>
+
+              <tr>
+                <td>Academic Calendar 2026-27</td>
+                <td>PDf</td>
+                <td>3.5 MB</td>
+                <td><a href="#" download>Download</a></td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr><td><strong>Total Resources Available: 5</strong></td></tr>
+            </tfoot>
+          </table>
+
+          <h3>Helpful External Links</h3>
+          <ul>
+            <li><a href="#">MIET Official Website</a></li>
+            <li><a href="#">Student Portal</a>
+            </li>
+            <li><a href="#">College Email</a></li>
+          </ul>
+        </fieldset>
+      </section>
+      <hr>
+
+      <section id="FAQ">
+              <h2>Frequently Asked Questions</h2>
+              <details>
+                <summary>How do I track my complaint status?</summary>
+                <p>
+                   After submitting a complaint, you will receive email updates. You can also check the status by logging into the student portal. 
+                </p>
+                </details>
+                <details>
+                  <summary>How long does it take to resolve a complaint?</summary>
+                  <p> Most complaints are resolved within 48 hours. Urgent issues are prioritised and resolved within 24 hours. </p>
+                </details>
+                <details>
+                <summary>Can I submit an anonymous complaint?</summary>
+                <p> Yes, you may leave the name field as "Anonymous". However, providing contact details helps us resolve issues faster. </p>
+                </details>
+                <details>
+                <summary>What categories of complaints are supported?</summary>
+                <p> We support Hostel, Lab, Classroom, Library, Transport, and Canteen related issues. Select "Other" if your issue does not fit any category. </p>
+                
+              </details>
+              
+
+      </section>
+      <hr>
+
+      <section>
+        <h3>Announcements</h3>
+        <ul>
+          <li> <b>Tech Fest 2026</b> - Oct 15-17 </li>
+          <li> <b>Placement Drive</b> - Sep 20 </li>
+          <li><b> Hostel Maintenance </b>- Aug 25 (Water supply)</li>
+          <li><b> Library Timings </b>- Extended till 8 PM during exams </li>
+        </ul>
+
+        <h4>Quick Info</h4>
+        <p>Helpdesk Hours</p>
+        <blockquote>Mon - Sat: 9 AM to 5 PM</blockquote>
+        <p>Emergency Contact</p>
+        <blockquote>+91-98765-43000</blockquote>
+        <p>Email</p>
+        <blockquote>helpdesk@miet.edu</blockquote>
+
+    
+
+      </section>
+      <hr>
+
+      <section>
+        <h4><i> MIET College</i></h4>
+        <p><i> NH-44, Near City Centre, Meerut</i></p>
+        <p><i> Uttar Pradesh - 250001</i></p>
+        <p><i> Phone: <a href="#">+91-98765-43000</a></i></p>
+        <p><i> Email: <a href="#">helpdesk@miet.edu</a> </i></p>
+
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Student Portal</a></li>
+          <li><a href="#">ERP Login</a></li>
+          <li><a href="#">Library</a></li>
+          <li><a href="#">Placement></li>
+        </ul>
+        <h4>Follow Us</h4>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">YouTube</a></li>
+        </ul>
+
+        <p>&copy 2026 MIET College. All rights reserved.</p>
+
+        <a href="#top">Back To Top</a>
+
+      </section>
+
+
+
+
+    </main>
+  </body>
+</html>
