@@ -1,55 +1,95 @@
-*{
-    box-sizing: border-box;
-    margin: 0px;
-    padding:0px;
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+.flex-container,
+.flex-item-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.flex-container {
+  padding: 12px;
+  box-shadow: 0px 4px 6px -2px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  width: 100%;
+  background-color: white;
+}
+.building {
+  background-image: url("https://www.w3schools.com/w3images/architect.jpg");
+  height: 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 8px;
+}
+.building > p {
+  color: white;
+  font-size: 24px;
+  word-spacing: 10px;
+}
+.building > p > span {
+  display: inline-block;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 8px;
 }
 
-.flex-container{
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    padding: 12px;
-    /* background-color: red; */
-    position: fixed;
-    width: 100%;
-    
-
+.projects-heading,
+.about-container {
+  margin: 16px 10px;
 }
-.flex-item-2{
-    display: flex;
-    gap: 10px;
-    /* background-color: yellow; */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 60vh;
+  gap: 12px;
 }
-.flex-container{
-    padding: 12px;
-    box-shadow: 0px 4px 6px -2px lightslategray;
+.projects-container > div {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.building{
-    background-image: url(https://www.w3schools.com/w3images/architect.jpg);
-    height: 100vh;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.projects-container > div > p {
+  background-color: black;
+  color: white;
+  display: inline-block;
+  padding: 8px;
 }
-
-.building{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.project-1,
+.project-6 {
+  background-image: url("https://www.w3schools.com/w3images/house5.jpg");
 }
-
-.building span{
-    display: inline-block;
-    background-color: rgba(0,0 ,0,0.8);
-    color: white;
-    padding: 8px;
-    font-weight: bold;
+.project-2,
+.project-5 {
+  background-image: url("https://www.w3schools.com/w3images/house2.jpg");
+}
+.project-3,
+.project-8 {
+  background-image: url("https://www.w3schools.com/w3images/house3.jpg");
+}
+.project-4,
+.project-7 {
+  background-image: url("https://www.w3schools.com/w3images/house4.jpg");
 }
 
-.building p{
-    color: white;
-    font-weight: 400;
-    font-size: 25px;
-    word-spacing: 10px;
+.people-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
 }
-
+.people-container > div > img {
+  width: 100%;
+  display: block;
+}
+.people-button {
+  width: 100%;
+  border: 0px;
+  padding: 6px 0px;
+  cursor: pointer;
+}
