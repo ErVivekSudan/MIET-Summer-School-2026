@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1{
+    background-color: lightblue;
+    text-align: center;
+    position: sticky;
+    top: 0px;
+}
+
+p{
+    text-align: center;
+
+}
+
+.to-top{
+    background-color: black;
+    color: white;
+    padding: 8px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+@media (width<=600px) and (width>=400px){
+    h1{
+        display: none;
+
+    }
+    p{
+        display: none;
+    }
+    .to-top{
+        display: none;
+    }
+    
+}

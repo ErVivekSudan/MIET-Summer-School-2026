@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin: 10px;
+}
+
+.grid-item{
+    background-image: url(https://www.w3schools.com/w3images/house5.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+
+}
+
+p{
+    background-color: black;
+    color: white;
+    padding: 8px;
+    display: inline-block;
+}
+
+@media (width <= 900px){
+    .grid-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (width <= 600px){
+    .grid-container{
+        grid-template-columns: 1fr;
+    }
+}
